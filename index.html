@@ -34,7 +34,7 @@
 </head>
 <body class="bg-sand">
     <!-- Header -->
-    <header style="background-image: url('images/minimal-1.jpg');" class="flex flex-col justify-items-stretch min-h-screen bg-cover bg-no-repeat">
+    <header style="background-image: url('images/minimal-1.jpg');" class="flex flex-col justify-items-stretch min-h-screen bg-cover bg-no-repeat text-white">
         <nav class="flex justify-between py-8">
             <div class="uppercase">
                 <a href="#" class="py-1 px-8">Nav 1</a>
@@ -57,7 +57,7 @@
 
     <!-- Services Section -->
     <section class="p-10p">
-        <h2 class="text-2xl uppercase">Our Services</h2>
+        <h2 class="text-2xl uppercase mb-4">Our Services</h2>
         <div class="text-center grid grid-cols-3 gap-4">
         <!-- Service 1 -->
             <div>
@@ -89,7 +89,7 @@
     <section class="border-x border-t border-black grid grid-cols-12 bg-cover bg-center bg-no-repeat" style="background-image: url('images/minimal-5.jpg');">
         <div class="col-span-3"></div>
         <div class="col-span-4 p-10p bg-sand border-x border-black">
-            <h2>Who we are</h2>
+            <h2 class="uppercase mb-4">Who we are</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis minima rerum ipsam iste numquam! Distinctio sint, tempora incidunt iste nobis ullam nemo neque quas commodi adipisci laborum quia obcaecati ut.</p>
             <a href="#">Find out more</a>
         <div class="col-span-5"></div>
@@ -107,9 +107,9 @@
 
     <!-- Gallery -->
     <section class="p-10p text-center">
-        <h2>Duis Aute Irure</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sapiente quibusdam nesciunt optio ipsam eum repellendus, repudiandae porro qui quas quo, ipsa quidem saepe fugit eos ea dolore. Deserunt, fugit!</p>
-        <div class="grid grid-cols-3 gap-4">
+        <h2 class="uppercase mb-4">Duis Aute Irure</h2>
+        <p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sapiente quibusdam nesciunt optio ipsam eum repellendus, repudiandae porro qui quas quo, ipsa quidem saepe fugit eos ea dolore. Deserunt, fugit!</p>
+        <div class="grid grid-cols-3 gap-4 mb-20">
             <img src="images/minimal-6.jpg">
             <img src="images/minimal-7.jpg">
             <img src="images/minimal-8.jpg">
@@ -117,7 +117,7 @@
             <img src="images/minimal-10.jpg">
             <img src="images/minimal-11.jpg">
         </div>
-        <a href="#">Sign up</a>
+        <a href="#" class="uppercase border border-black px-8 py-4">Sign up</a>
     </section>
 
     <!-- Contact -->
@@ -126,32 +126,22 @@
         <div class="col-span-6 p-10p">
             <h2 class="mb-4">Contact us</h2>
             <form class="grid grid-cols-1 gap-2">
-                <input class="bg-transparent border-b border-black placeholder:text-black" placeholder="Name" aria-label="Name" type="text" id="name" name="name"><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+                <!-- Name -->
+                <input class="bg-transparent border-b border-black placeholder:text-black" placeholder="Name" aria-label="Name" type="text" id="name" name="name">
+                <!-- Email -->
+                <input class="bg-transparent border-b border-black placeholder:text-black" placeholder="Email" aria-label="Email" type="text" id="email" name="email">
+                <!-- Message -->
+                <div class="grid grid-cols-1">
+                    <label for="message">Message</label>
+                    <textarea class="bg-transparent border border-black" id="message" name="message"></textarea>
+                </div>
             </form> 
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="grid grid-cols-5 p-5p">
-        <div>
-            <h3>Lorem Ipsum</h3>
-            <a href="#">Dolor sit amet</a>
-            <a href="#">Consectetur</a>
-            <a href="#">Adipisicing elit</a>
-            <a href="#">Sed do</a>
-        </div>
-        <div>
-            <h3>Lorem Ipsum</h3>
-            <a href="#">Dolor sit amet</a>
-            <a href="#">Consectetur</a>
-            <a href="#">Adipisicing elit</a>
-            <a href="#">Sed do</a>
-        </div>
-        <div>
+    <footer class="grid grid-cols-9 p-5p">
+        <div class="col-span-2">
             <h3>Lorem Ipsum</h3>
             <a href="#">Dolor sit amet</a>
             <a href="#">Consectetur</a>
@@ -159,10 +149,24 @@
             <a href="#">Sed do</a>
         </div>
         <div class="col-span-2">
+            <h3>Lorem Ipsum</h3>
+            <a href="#">Dolor sit amet</a>
+            <a href="#">Consectetur</a>
+            <a href="#">Adipisicing elit</a>
+            <a href="#">Sed do</a>
+        </div>
+        <div class="col-span-2">
+            <h3>Lorem Ipsum</h3>
+            <a href="#">Dolor sit amet</a>
+            <a href="#">Consectetur</a>
+            <a href="#">Adipisicing elit</a>
+            <a href="#">Sed do</a>
+        </div>
+        <div class="col-span-3 text-right">
             <h3>Subscribe to our newsletter</h3>
             <div></div>
         </div>
-        <div>
+        <div class="grid grid-cols-1">
             <h4>Terms of use</h4>
         </div>
     </footer>
