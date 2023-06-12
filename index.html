@@ -20,12 +20,19 @@
                     'display': ['Montserrat', "sans-serif"],
                     'sans': ['Poppins', "sans-serif"]
                 },
+                spacing: {
+                    '5p': '5%',
+                    '10p': '10%'
+                },
+                colors: {
+                    'sand': '#eae6de',
+                },
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="bg-sand">
     <!-- Header -->
     <header style="background-image: url('images/minimal-1.jpg');" class="flex flex-col justify-items-stretch min-h-screen bg-cover bg-no-repeat">
         <nav class="flex justify-between py-8">
@@ -41,48 +48,52 @@
                 <a href="#" class="py-1 px-8">Nav 6</a>
             </div>
         </nav>
-        <div class="text-center flex-grow flex flex-col justify-center">
-            <hr>
-            <h1 class="font-display uppercase text-6xl mb-4">This is a heading</h1>
+        <div class="text-center flex-grow flex flex-col justify-center items-center">
+            <hr class="mb-12 w-28">
+            <h1 class="font-display uppercase text-5xl mb-4">This is a heading</h1>
             <h2 class="font-sans text-2xl">This is a subheading</h2>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section>
-        <h2>Our Services</h2>
+    <section class="p-10p">
+        <h2 class="text-2xl uppercase">Our Services</h2>
+        <div class="text-center grid grid-cols-3 gap-4">
         <!-- Service 1 -->
-        <div>
-            <img src="#">
-            <h3>Duis Aute</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.</p>
-        </div>
+            <div>
+                <img src="images/minimal-2.jpg" class="mb-6">
+                <h3 class="uppercase mb-4">Duis Aute</h3>
+                <hr class="border-black mb-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.</p>
+            </div>
 
-        <!-- Service 2 -->
-        <div>
-            <img src="#">
-            <h3>Duis Aute</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.</p>
-        </div>
+            <!-- Service 2 -->
+            <div>
+                <img src="images/minimal-3.jpg" class="mb-6">
+                <h3 class="uppercase mb-4">Duis Aute</h3>
+                <hr class="border-black mb-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.</p>
+            </div>
 
-        <!-- Service 3 -->
-        <div>
-            <img src="#">
-            <h3>Duis Aute</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.</p>
+            <!-- Service 3 -->
+            <div>
+                <img src="images/minimal-4.jpg" class="mb-6">
+                <h3 class="uppercase mb-4">Duis Aute</h3>
+                <hr class="border-black mb-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.</p>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section>
-        <div>
+    <section class="border border-black grid grid-cols-3 min-h-screen">
+        <div style="background-image: url('images/minimal-5.jpg');" class="bg-cover bg-center bg-no-repeat"></div>
+        <div class="p-10p">
             <h2>Who we are</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis minima rerum ipsam iste numquam! Distinctio sint, tempora incidunt iste nobis ullam nemo neque quas commodi adipisci laborum quia obcaecati ut.</p>
             <a href="#">Find out more</a>
         </div>
+        <div style="background-image: url('images/minimal-5.jpg');" class="bg-cover bg-center bg-no-repeat"></div>
     </section>
 
     <!-- Clients -->
