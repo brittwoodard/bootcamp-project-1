@@ -436,6 +436,11 @@ p {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.bg-image-style {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -478,11 +483,17 @@ p {
 .grid {
   display: grid;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .h-40 {
   height: 10rem;
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-70 {
+  min-height: 70vh;
 }
 .w-28 {
   width: 7rem;
