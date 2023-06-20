@@ -1,16 +1,16 @@
-<header style="background-image: url('images/minimal-1.jpg');"
+<header style="background-image: url('{{page.header.image.image_path}}');"
     class="flex flex-col justify-items-stretch min-h-screen bg-cover bg-no-repeat text-white">
     <nav class="flex justify-between py-8 border-b border-feature">
         <div class="uppercase text-feature">
-            <a href="#" class="py-1 px-8">Nav 1</a>
-            <a href="#" class="py-1 px-8">Nav 2</a>
-            <a href="#" class="py-1 px-8">Nav 3</a>
+            {% for item in site.data.site-settings.navigation limit:3 %}
+            <a href="#" class="py-1 px-8">{{item.title}}</a>
+            {% endfor %}
         </div>
         <div class="font-display text-6 flex justify-center items-center text-lg">LOGO</div>
         <div class="uppercase text-feature">
-            <a href="#" class="py-1 px-8">Nav 4</a>
-            <a href="#" class="py-1 px-8">Nav 5</a>
-            <a href="#" class="py-1 px-8">Nav 6</a>
+            {% for item in site.data.site-settings.navigation limit:3 offset:3 %}
+            <a href="#" class="py-1 px-8">{{item.title}}</a>
+            {% endfor %}
         </div>
     </nav>
     <div class="text-center flex-grow flex flex-col justify-center items-center">

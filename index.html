@@ -1,107 +1,25 @@
 ---
 layout: default
 title: Homepage
+header:
+  heading: This is a heading
+  subheading: This is a subheading
+  image: 
+    image_path: /images/minimal-1.jpg
+    image_focus: 
 ---
 
     <!-- Services Section -->
-    <section class="p-10p">
-        <h2 class="text-2xl uppercase mb-4">Our Services</h2>
-        <div class="text-center grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Service 1 -->
-            <div>
-                <img src="images/minimal-2.jpg" class="mb-6">
-                <h3 class="uppercase mb-4 font-semibold">Duis Aute</h3>
-                <hr class="border-black mb-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid
-                    illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus
-                    omnis tempore rerum doloribus earum.</p>
-            </div>
-
-            <!-- Service 2 -->
-            <div>
-                <img src="images/minimal-3.jpg" class="mb-6">
-                <h3 class="uppercase mb-4 font-semibold">Duis Aute</h3>
-                <hr class="border-black mb-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid
-                    illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus
-                    omnis tempore rerum doloribus earum.</p>
-            </div>
-
-            <!-- Service 3 -->
-            <div>
-                <img src="images/minimal-4.jpg" class="mb-6">
-                <h3 class="uppercase mb-4 font-semibold">Duis Aute</h3>
-                <hr class="border-black mb-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid
-                    illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus
-                    omnis tempore rerum doloribus earum.</p>
-            </div>
-        </div>
-    </section>
+    {% include services.html %}
 
     <!-- About Section -->
-    <section class="border-x border-t border-black grid grid-cols-12 bg-cover bg-top-center bg-no-repeat"
-        style="background-image: url('images/minimal-5.jpg');">
-        <div class="col-span-3"></div>
-        <div class="col-span-9 md:col-span-4 p-10p bg-sand border-x border-black">
-            <h2 class="uppercase mb-4 text-xl">Who we are</h2>
-            <p class="mb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis minima rerum ipsam iste
-                numquam!
-                Distinctio sint, tempora incidunt iste nobis ullam nemo neque quas commodi adipisci laborum quia
-                obcaecati ut.</p>
-            <a href="#" class="border border-black px-10 py-2 uppercase">Find out more</a>
-            <div class="col-span-5"></div>
-    </section>
+    {% include about.html %}
 
     <!-- Clients -->
-    <section class="grid grid-cols-3 md:grid-cols-6 text-center">
-        <div class="border border-black py-2">Brand Name</div>
-        <div class="border border-black py-2">Brand Name</div>
-        <div class="border border-black py-2">Brand Name</div>
-        <div class="border border-black py-2">Brand Name</div>
-        <div class="border border-black py-2">Brand Name</div>
-        <div class="border border-black py-2">Brand Name</div>
-    </section>
+    {% include clients.html %}
 
     <!-- Gallery -->
-    <section class="p-10p text-center">
-        <h2 class="uppercase mb-6 text-2xl">Duis Aute Irure</h2>
-        <p class="mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sapiente quibusdam nesciunt
-            optio ipsam eum repellendus, repudiandae porro qui quas quo, ipsa quidem saepe fugit eos ea dolore.
-            Deserunt, fugit!</p>
-        <div class="grid md:grid-cols-3 gap-4 mb-20">
-            <img src="images/minimal-6.jpg">
-            <img src="images/minimal-7.jpg">
-            <img src="images/minimal-8.jpg">
-            <img src="images/minimal-9.jpg">
-            <img src="images/minimal-10.jpg">
-            <img src="images/minimal-11.jpg">
-        </div>
-        <a href="#" class="uppercase border border-black px-10 py-2 mb-4 md:mb-0 inline-block">Sign up</a>
-    </section>
+    {% include gallery.html %}
 
     <!-- Contact -->
-    <section class="border border-black grid md:grid-cols-10">
-        <div style="background-image: url('images/minimal-12.jpg');"
-            class="md:col-span-4 border-x border-black border-b h-40 md:h-full md:border-b-0"></div>
-        <div class="md:col-span-6 p-10p">
-            <h2 class="mb-8 text-2xl">Contact us</h2>
-            <form class="grid grid-cols-1 gap-8">
-                <!-- Name -->
-                <input class="bg-transparent border-b border-black placeholder:text-black" placeholder="Name"
-                    aria-label="Name" type="text" id="name" name="name">
-                <!-- Email -->
-                <input class="bg-transparent border-b border-black placeholder:text-black" placeholder="Email"
-                    aria-label="Email" type="text" id="email" name="email">
-                <!-- Message -->
-                <div class="grid grid-cols-1 mb-2">
-                    <label for="message">Message</label>
-                    <textarea class="bg-transparent border border-black" id="message" name="message"></textarea>
-                </div>
-                <!-- Submit -->
-                <div class="text-right">
-                    <input class="border border-black px-10 py-2" type="submit" value="SEND">
-                </div>
-            </form>
-        </div>
-    </section>
+    {% include contact.html %}
