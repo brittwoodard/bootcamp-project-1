@@ -1,4 +1,4 @@
-<header style="background-image: url('{{page.header.image.image_path}}');"
+<header style="background-image: url('{{page.banner.image.image_path}}'); background-position: {{page.banner.image.image_focus}};"
     class="flex flex-col justify-items-stretch min-h-screen bg-cover bg-no-repeat text-white">
     <nav class="flex justify-between py-8 border-b border-feature">
         <div class="uppercase text-feature">
@@ -15,7 +15,7 @@
     </nav>
     <div class="text-center flex-grow flex flex-col justify-center items-center">
         <hr class="mb-12 w-28 border-t-2">
-        <h1 class="font-display uppercase text-5xl mb-4 tracking-wider">This is a heading</h1>
-        <h2 class="font-sans text-2xl tracking-wide">This is a subheading</h2>
+        <h1 class="font-display uppercase text-5xl mb-4 tracking-wider">{{page.banner.heading}}</h1>
+        <h2 class="font-sans text-2xl tracking-wide">{{page.banner.subheading}}</h2>
     </div>
 </header>
