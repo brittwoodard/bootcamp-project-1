@@ -1,65 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital@0;1&display=swap"
-        rel="stylesheet">
-    <!-- Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'display': ['Montserrat', "sans-serif"],
-                        'sans': ['Poppins', "sans-serif"]
-                    },
-                    spacing: {
-                        '5p': '5%',
-                        '10p': '10%'
-                    },
-                    colors: {
-                        'sand': '#eae6de',
-                        'feature': '#916547'
-                    },
-                }
-            }
-        }
-    </script>
-</head>
-
-<body class="bg-sand">
-    <!-- Header -->
-    <header style="background-image: url('images/minimal-1.jpg');"
-        class="flex flex-col justify-items-stretch min-h-screen bg-cover bg-no-repeat text-white">
-        <nav class="flex justify-between py-8 border-b border-feature">
-            <div class="uppercase text-feature">
-                <a href="#" class="py-1 px-8">Nav 1</a>
-                <a href="#" class="py-1 px-8">Nav 2</a>
-                <a href="#" class="py-1 px-8">Nav 3</a>
-            </div>
-            <div class="font-display text-6 flex justify-center items-center text-lg">LOGO</div>
-            <div class="uppercase text-feature">
-                <a href="#" class="py-1 px-8">Nav 4</a>
-                <a href="#" class="py-1 px-8">Nav 5</a>
-                <a href="#" class="py-1 px-8">Nav 6</a>
-            </div>
-        </nav>
-        <div class="text-center flex-grow flex flex-col justify-center items-center">
-            <hr class="mb-12 w-28 border-t-2">
-            <h1 class="font-display uppercase text-5xl mb-4 tracking-wider">This is a heading</h1>
-            <h2 class="font-sans text-2xl tracking-wide">This is a subheading</h2>
-        </div>
-    </header>
+---
+layout: default
+title: Homepage
+---
 
     <!-- Services Section -->
     <section class="p-10p">
@@ -163,48 +105,3 @@
             </form>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="grid grid-cols-9 gap-4 p-5p border border-black">
-            <div class="col-span-2">
-                <h3 class="font-semibold mb-4">Lorem Ipsum</h3>
-                <a class="block" href="#">Dolor sit amet</a>
-                <a class="block" href="#">Consectetur</a>
-                <a class="block" href="#">Adipisicing elit</a>
-                <a class="block" href="#">Sed do</a>
-            </div>
-            <div class="col-span-2">
-                <h3 class="font-semibold mb-4">Lorem Ipsum</h3>
-                <a class="block" href="#">Dolor sit amet</a>
-                <a class="block" href="#">Consectetur</a>
-                <a class="block" href="#">Adipisicing elit</a>
-                <a class="block" href="#">Sed do</a>
-            </div>
-            <div class="col-span-2">
-                <h3 class="font-semibold mb-4">Lorem Ipsum</h3>
-                <a class="block" href="#">Dolor sit amet</a>
-                <a class="block" href="#">Consectetur</a>
-                <a class="block" href="#">Adipisicing elit</a>
-                <a class="block" href="#">Sed do</a>
-            </div>
-            <div class="col-span-3 text-right">
-                <h3 class="font-semibold mb-4">Subscribe to our newsletter</h3>
-                <form class="grid grid-cols-1 gap-3">
-                    <!-- Email -->
-                    <input class="bg-transparent border border-black p-1 mb-2" aria-label="Email" type="text" id="email"
-                        name="email">
-                    <!-- Submit -->
-                    <div class="text-right">
-                        <input class="border border-black px-10 py-2" type="submit" value="SUBSCRIBE">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="grid grid-cols-1 border-t border-black px-5p py-4">
-            <h4 class="capitalize">Terms of use</h4>
-        </div>
-    </footer>
-</body>
-
-</html>
