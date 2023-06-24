@@ -489,11 +489,11 @@ p {
 .h-40 {
   height: 10rem;
 }
-.min-h-screen {
-  min-height: 100vh;
-}
 .min-h-70 {
   min-height: 70vh;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-28 {
   width: 7rem;
