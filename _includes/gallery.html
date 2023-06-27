@@ -2,12 +2,9 @@
     <h2 class="uppercase mb-6 text-2xl">{{page.gallery-section.heading}}</h2>
     <p class="mb-12">{{page.gallery-section.description}}</p>
     <div class="grid md:grid-cols-3 gap-4 mb-20">
-        <img src="images/minimal-6.jpg">
-        <img src="images/minimal-7.jpg">
-        <img src="images/minimal-8.jpg">
-        <img src="images/minimal-9.jpg">
-        <img src="images/minimal-10.jpg">
-        <img src="images/minimal-11.jpg">
+        {% for item in page.gallery-section.gallery %}
+        <img src="{{item.image_path}}">
+        {% endfor %}
     </div>
     <a href="#" class="uppercase border border-black px-10 py-2 mb-4 md:mb-0 inline-block">Schedule a Complimentary Consultation</a>
 </section>
