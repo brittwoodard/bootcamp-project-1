@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Service 1
+title: Customized Meal Planning
 featured_image: 
   image_path: /images/minimal-2.jpg
   image_focus: 
-heading: Duis Aute
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.
+heading: Customized Meal Planning
+description: Delve into a world of culinary craftsmanship as I curate bespoke meal plans that align with your dietary needs, preferences, and the timeless wisdom of Ayurveda.
 ---

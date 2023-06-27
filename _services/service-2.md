@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Service 1
+title: In-Home Cooking
 featured_image: 
   image_path: /images/minimal-3.jpg
   image_focus: 
-heading: Duis Aute
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus quidem dolores aliquid illo expedita labore natus fugiat. Non consequatur nisi repudiandae voluptatum exercitationem, natus omnis tempore rerum doloribus earum.
+heading: In-Home Cooking
+description: Indulge in the convenience of home-cooked meals infused with Ayurvedic essence. I bring nourishing flavors to your table, utilizing Ayurvedic ingredients and techniques for deliciously wholesome and satisfying dishes.
 ---
