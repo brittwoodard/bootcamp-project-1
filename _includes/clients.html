@@ -1,8 +1,7 @@
 <section class="grid grid-cols-3 md:grid-cols-6 text-center">
-    <div class="border border-black py-2">Brand Name</div>
-    <div class="border border-black py-2">Brand Name</div>
-    <div class="border border-black py-2">Brand Name</div>
-    <div class="border border-black py-2">Brand Name</div>
-    <div class="border border-black py-2">Brand Name</div>
-    <div class="border border-black py-2">Brand Name</div>
+    {% for item in site-settings.brands limit:6 %}
+    <div class="border border-black py-2">
+        {{item.title}}
+    </div>
+    {% endfor %}
 </section>
