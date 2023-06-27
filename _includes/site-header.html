@@ -2,14 +2,14 @@
     class="flex flex-col justify-items-stretch min-h-screen bg-cover bg-no-repeat text-white">
     <nav class="flex justify-between py-8 border-b border-feature">
         <div class="uppercase text-feature">
-            {% for item in site.data.site-settings.navigation limit:3 %}
-            <a href="#" class="py-1 px-8">{{item.title}}</a>
+            {% for item in site.data.site-settings.navigation limit:2 %}
+            <a href="{{item.url}}" class="py-1 px-8">{{item.title}}</a>
             {% endfor %}
         </div>
         <div class="font-display text-6 flex justify-center items-center text-lg">LOGO</div>
         <div class="uppercase text-feature">
-            {% for item in site.data.site-settings.navigation limit:3 offset:3 %}
-            <a href="#" class="py-1 px-8">{{item.title}}</a>
+            {% for item in site.data.site-settings.navigation limit:2 offset:2 %}
+            <a href="{{item.url}}" class="py-1 px-8">{{item.title}}</a>
             {% endfor %}
         </div>
     </nav>

@@ -1,17 +1,14 @@
 navigation: 
-  - url: '#'
-    title: Link 1
-  - url: '#'
-    title: Link 2
-  - url: '#'
-    title: Link 3
-  - url: '#'
-    title: Link 4
-  - url: '#'
-    title: Link 5
-  - url: '#'
-    title: Link 6
-brands:
+  - url: '#services'
+    title: Services
+  - url: '#about'
+    title: About
+  - url: '#gallery'
+    title: Gallery
+  - url: '#contact'
+    title: Contact
+
+features:
   - title: Customized Menus
   - title: Mindful Cooking
   - title: Personal Chef
