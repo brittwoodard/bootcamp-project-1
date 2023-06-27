@@ -1,6 +1,6 @@
 <section class="p-10p text-center" id="gallery">
     <h2 class="uppercase mb-6 text-2xl">{{page.gallery-section.heading}}</h2>
-    <p class="mb-12">{{page.gallery-section.description}}</p>
+    <p>{{page.gallery-section.description}}</p>
     <div class="grid md:grid-cols-3 gap-4 mb-20">
         {% for item in page.gallery-section.gallery %}
         <img src="{{item.image_path}}">
