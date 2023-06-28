@@ -437,10 +437,10 @@ p {
   --tw-backdrop-sepia:  ;
 }
 .bg-image-style {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
