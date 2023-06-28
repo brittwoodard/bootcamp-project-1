@@ -310,34 +310,6 @@ video {
 [hidden] {
   display: none;
 }
-h1, h2, h3, h4 {
-  margin-bottom: 0.5em;
-  font-family: Italiana, serif;
-}
-h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  line-height: 1.25;
-}
-h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  line-height: 1.25;
-}
-h3 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
-}
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
-}
-p {
-  margin-bottom: 0.5em;
-  line-height: 1.5;
-}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -585,12 +557,6 @@ p {
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-cover {
-  background-size: cover;
-}
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 .p-1 {
   padding: 0.25rem;

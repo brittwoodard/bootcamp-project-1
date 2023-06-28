@@ -17,6 +17,10 @@ module.exports = {
           '10p': '10%',
           '15p': '15%',
         },
+        colors: {
+          'sand': '#eae6de',
+          'feature': '#916547',
+        },  
         aspectRatio: {
           'landscape': '2 / 1 ',
           'portrait': '3 / 4',
@@ -29,7 +33,7 @@ module.exports = {
           '70': '70vh',
           '60': '60vh',
           '50': '50vh',
-        },
+        },      
       },
     },
     plugins: [
