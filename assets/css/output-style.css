@@ -486,6 +486,9 @@ p {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -688,6 +691,9 @@ p {
 }
 
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
   .sm\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -703,6 +709,9 @@ p {
   }
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+  .md\:flex {
+    display: flex;
   }
   .md\:h-full {
     height: 100%;
