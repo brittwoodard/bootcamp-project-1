@@ -408,14 +408,19 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-/* .logo {
-        @apply font-display text-6 flex justify-center items-center text-lg text-center
-    } */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .bg-image-style {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .absolute {
   position: absolute;
 }
