@@ -310,6 +310,9 @@ video {
 [hidden] {
   display: none;
 }
+html {
+        scroll-behavior: smooth;
+    }
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -686,6 +689,15 @@ video {
 .pulse-animation:hover {
     animation-play-state: paused;
 }
+
+@keyframes pulse {
+    from {
+      scale: .9;
+    }
+    to { 
+      scale: 1.1;
+    }
+  }
 
 .placeholder\:text-black::-moz-placeholder {
   --tw-text-opacity: 1;

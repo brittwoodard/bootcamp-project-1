@@ -6,7 +6,11 @@
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
-@layer base {}
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
@@ -31,3 +35,12 @@
 .pulse-animation:hover {
     animation-play-state: paused;
 }
+
+@keyframes pulse {
+    from {
+      scale: .9;
+    }
+    to { 
+      scale: 1.1;
+    }
+  }
