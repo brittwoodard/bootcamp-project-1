@@ -313,6 +313,26 @@ video {
 html {
         scroll-behavior: smooth;
     }
+nav a {
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(145 101 71 / var(--tw-text-opacity));
+}
+.heading-lg {
+  margin-bottom: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  line-height: 1.25rem;
+  letter-spacing: 0.05em;
+}
+.subtitle {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.025em;
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -636,16 +656,9 @@ html {
 .text-right {
   text-align: right;
 }
-.font-sans {
-  font-family: Montserrat, sans-serif;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -659,16 +672,6 @@ html {
 }
 .capitalize {
   text-transform: capitalize;
-}
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-.text-feature {
-  --tw-text-opacity: 1;
-  color: rgb(145 101 71 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -687,8 +690,10 @@ html {
 }
 
 .pulse-animation:hover {
-    animation-play-state: paused;
-}
+    /* animation-play-state: paused; */
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    transition-duration: 1000ms}
 
 @keyframes pulse {
     from {
