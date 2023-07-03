@@ -50,6 +50,10 @@
         @apply
     }
 
+    .button {
+        @apply border border-black px-10 py-2 text-center inline-block uppercase
+    }
+
 }
 
 /* JS */

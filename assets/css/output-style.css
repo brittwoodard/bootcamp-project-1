@@ -455,6 +455,18 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
 }
+.button {
+  display: inline-block;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 .absolute {
   position: absolute;
 }
@@ -671,10 +683,6 @@ nav a {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .font-semibold {
   font-weight: 600;
 }
@@ -741,9 +749,6 @@ nav a {
   }
   .md\:col-span-6 {
     grid-column: span 6 / span 6;
-  }
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
   .md\:flex {
     display: flex;
