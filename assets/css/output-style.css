@@ -318,13 +318,15 @@ nav a {
   --tw-text-opacity: 1;
   color: rgb(145 101 71 / var(--tw-text-opacity));
 }
-.heading-lg {
+.heading-lg-mobile {
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 1rem;
   font-family: Montserrat, sans-serif;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
-  line-height: 1.25rem;
+  line-height: 1.2em;
   letter-spacing: 0.05em;
 }
 .heading-md {
@@ -339,9 +341,16 @@ nav a {
   text-transform: uppercase;
 }
 .subtitle {
-  font-family: Montserrat, sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.subtitle-mobile {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 1.2em;
   letter-spacing: 0.025em;
 }
 *, ::before, ::after {
@@ -645,10 +654,6 @@ nav a {
 .p-5p {
   padding: 5%;
 }
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
 .px-5p {
   padding-left: 5%;
   padding-right: 5%;
@@ -678,16 +683,6 @@ nav a {
 }
 .text-right {
   text-align: right;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.font-semibold {
-  font-weight: 600;
-}
-.uppercase {
-  text-transform: uppercase;
 }
 .capitalize {
   text-transform: capitalize;
@@ -722,6 +717,19 @@ nav a {
       scale: 1.1;
     }
   }
+
+@media (min-width: 640px) {
+
+    .sm\:heading-lg {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+    .sm\:subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 
 .placeholder\:text-black::-moz-placeholder {
   --tw-text-opacity: 1;
