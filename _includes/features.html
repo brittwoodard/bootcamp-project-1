@@ -1,6 +1,6 @@
-<section class="grid grid-cols-3 md:grid-cols-6 text-center divide-x divide-y divide-black border-b border-black">
+<section class="grid grid-cols-3 md:grid-cols-6 text-center justify-center items-center gap-[1px] bg-dark">
     {% for item in site.data.site-settings.features limit:6 %}
-    <div class="py-2">
+    <div class="py-2 bg-sand">
         {{item.title}}
     </div>
     {% endfor %}

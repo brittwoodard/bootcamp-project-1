@@ -62,6 +62,10 @@
         @apply border border-black px-10 py-2 text-center inline-block uppercase
     }
 
+    .button:hover {
+        @apply border-feature text-feature transition-[0.5s]
+    }
+
 }
 
 /* JS */
