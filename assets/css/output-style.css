@@ -327,6 +327,17 @@ nav a {
   line-height: 1.25rem;
   letter-spacing: 0.05em;
 }
+.heading-md {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+.heading-sm {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .subtitle {
   font-family: Montserrat, sans-serif;
   font-size: 1.5rem;
