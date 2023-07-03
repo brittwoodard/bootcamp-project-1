@@ -316,7 +316,7 @@ html {
 nav a {
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(145 101 71 / var(--tw-text-opacity));
+  color: rgb(140 79 61 / var(--tw-text-opacity));
 }
 .heading-lg-mobile {
   margin-left: 5%;
@@ -339,10 +339,6 @@ nav a {
   margin-bottom: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-}
-.subtitle {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .subtitle-mobile {
   margin-left: 5%;
@@ -485,9 +481,6 @@ nav a {
 .right-\[49\%\] {
   right: 49%;
 }
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -496,6 +489,12 @@ nav a {
 }
 .col-span-9 {
   grid-column: span 9 / span 9;
+}
+.m-10p {
+  margin: 10%;
+}
+.m-\[30\%\] {
+  margin: 30%;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -562,6 +561,9 @@ nav a {
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -632,7 +634,7 @@ nav a {
 }
 .border-feature {
   --tw-border-opacity: 1;
-  border-color: rgb(145 101 71 / var(--tw-border-opacity));
+  border-color: rgb(140 79 61 / var(--tw-border-opacity));
 }
 .border-white {
   --tw-border-opacity: 1;

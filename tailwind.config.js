@@ -19,7 +19,7 @@ module.exports = {
         },
         colors: {
           'sand': '#eae6de',
-          'feature': '#916547',
+          'feature': '#8c4f3d',
         },  
         aspectRatio: {
           'landscape': '2 / 1 ',
