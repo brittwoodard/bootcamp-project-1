@@ -611,15 +611,6 @@ nav a {
 .gap-\[1px\] {
   gap: 1px;
 }
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-.divide-black > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-divide-opacity));
-}
 .self-center {
   align-self: center;
 }
@@ -661,16 +652,16 @@ nav a {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
 .bg-sand {
   --tw-bg-opacity: 1;
   background-color: rgb(234 230 222 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-fixed {
   background-attachment: fixed;
@@ -714,9 +705,6 @@ nav a {
 .text-right {
   text-align: right;
 }
-.align-middle {
-  vertical-align: middle;
-}
 .capitalize {
   text-transform: capitalize;
 }
@@ -735,16 +723,15 @@ nav a {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-/* JS */
+/* JS
 .pulse-animation {
     animation: pulse 1s ease-in-out infinite alternate;
 }
 
-.pulse-animation:hover {
+.pulse-animation:hover { */
     /* animation-play-state: paused; */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-    transition-duration: 1000ms}
+    /* @apply bg-white duration-1000
+}
 
 @keyframes pulse {
     from {
@@ -753,9 +740,8 @@ nav a {
     to { 
       scale: 1.1;
     }
-  }
-
-@media (min-width: 640px) {
+  } */
+    @media (min-width: 640px) {
 
     .sm\:heading-lg {
     font-size: 3rem;
@@ -763,22 +749,19 @@ nav a {
   }
 
     .sm\:subtitle {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
-
-.placeholder\:text-black::-moz-placeholder {
+    .placeholder\:text-black::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-
-.placeholder\:text-black::placeholder {
+    .placeholder\:text-black::placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-
-@media (min-width: 640px) {
+    @media (min-width: 640px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -798,8 +781,7 @@ nav a {
     text-align: right;
   }
 }
-
-@media (min-width: 768px) {
+    @media (min-width: 768px) {
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -828,8 +810,7 @@ nav a {
     border-bottom-width: 0px;
   }
 }
-
-@media (min-width: 1024px) {
+    @media (min-width: 1024px) {
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -838,8 +819,7 @@ nav a {
     padding-right: 4rem;
   }
 }
-
-@media (min-width: 1280px) {
+    @media (min-width: 1280px) {
   .xl\:col-span-4 {
     grid-column: span 4 / span 4;
   }

@@ -32,7 +32,7 @@
     }
 
     .subtitle {
-        @apply text-2xl
+        @apply text-xl
     }
 
     .subtitle-mobile {
@@ -68,14 +68,14 @@
 
 }
 
-/* JS */
+/* JS
 .pulse-animation {
     animation: pulse 1s ease-in-out infinite alternate;
 }
 
-.pulse-animation:hover {
+.pulse-animation:hover { */
     /* animation-play-state: paused; */
-    @apply bg-white duration-1000
+    /* @apply bg-white duration-1000
 }
 
 @keyframes pulse {
@@ -85,4 +85,4 @@
     to { 
       scale: 1.1;
     }
-  }
+  } */
