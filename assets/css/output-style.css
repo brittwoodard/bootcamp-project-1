@@ -560,6 +560,9 @@ nav a {
 .min-h-screen {
   min-height: 100vh;
 }
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -568,6 +571,12 @@ nav a {
 }
 .w-\[95vw\] {
   width: 95vw;
+}
+.w-\[100vw\] {
+  width: 100vw;
+}
+.w-full {
+  width: 100%;
 }
 .flex-grow {
   flex-grow: 1;
