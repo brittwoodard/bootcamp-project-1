@@ -447,6 +447,34 @@ nav a {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 .logo {
   display: flex;
   align-items: center;
@@ -481,14 +509,8 @@ nav a {
 .bottom-8 {
   bottom: 2rem;
 }
-.bottom-\[360\%\] {
-  bottom: 360%;
-}
 .right-\[49\%\] {
   right: 49%;
-}
-.col-span-2 {
-  grid-column: span 2 / span 2;
 }
 .col-span-3 {
   grid-column: span 3 / span 3;
@@ -501,6 +523,10 @@ nav a {
 }
 .m-\[30\%\] {
   margin: 30%;
+}
+.mx-\[30\%\] {
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .mb-12 {
   margin-bottom: 3rem;
@@ -537,6 +563,9 @@ nav a {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+.aspect-portrait {
+  aspect-ratio: 3 / 4;
 }
 .h-10 {
   height: 2.5rem;
@@ -615,6 +644,9 @@ nav a {
   --tw-divide-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-divide-opacity));
 }
+.self-center {
+  align-self: center;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -641,6 +673,10 @@ nav a {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
+.border-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-feature {
   --tw-border-opacity: 1;
   border-color: rgb(140 79 61 / var(--tw-border-opacity));
@@ -649,16 +685,15 @@ nav a {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.border-dark {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
 .bg-sand {
   --tw-bg-opacity: 1;
   background-color: rgb(234 230 222 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-fixed {
+  background-attachment: fixed;
 }
 .p-1 {
   padding: 0.25rem;
