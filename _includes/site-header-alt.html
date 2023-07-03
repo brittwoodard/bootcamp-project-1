@@ -1,23 +1,10 @@
-<header>
-    <nav class="hidden sm:hidden md:flex justify-between py-8 border-b border-feature">
-        <div>
-            {% for item in site.data.site-settings.navigation limit:2 %}
-            <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
-            {% endfor %}
-        </div>
-        <div class="logo">AYURVEDIC ALCHEMY</div>
-        <div">
-            {% for item in site.data.site-settings.navigation limit:2 offset:2 %}
-            <a href="{{item.url}}" class="py-1 px-8 lg:px-16">{{item.title}}</a>
-            {% endfor %}
-        </div>
-    </nav>
+<header class="border border-black">
     <div class="grid grid-cols-2" style="background-color: #CEC6B3;">
         <div style="background-image: url('{{page.banner.image.image_path}}'); background-position: {{page.banner.image.image_focus}};"
-        class="flex flex-col justify-items-stretch min-h-screen bg-image-style text-white"></div>
-        <div class="bg-image-style m-[30%]" style="background-image: url('/images/ayurvedic-alchemy-8.jpg');"></div>
-    <div class="text-center flex-grow flex flex-col justify-center items-center">
-        <h1 class="heading-lg-mobile sm:heading-lg">{{page.banner.heading}}</h1>
-        <h2 class="subtitle-mobile sm:subtitle">{{page.banner.subheading}}</h2>
-    </div>
+            class="flex flex-col justify-items-stretch min-h-[80vh] bg-image-style border-r border-black"></div>
+        <div class="bg-image-style m-[30%] border border-black" style="background-image: url('/images/ayurvedic-alchemy-8.jpg');"></div>
+        <div class="text-center flex-grow flex flex-col justify-center items-center relative col-span-2 bottom-[360%] text-white">
+            <h1 class="heading-lg-mobile sm:heading-lg">{{page.banner.heading}}</h1>
+            <h2 class="subtitle-mobile sm:subtitle">{{page.banner.subheading}}</h2>
+        </div>
 </header>

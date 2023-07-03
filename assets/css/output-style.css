@@ -475,11 +475,20 @@ nav a {
 .absolute {
   position: absolute;
 }
+.relative {
+  position: relative;
+}
 .bottom-8 {
   bottom: 2rem;
 }
+.bottom-\[360\%\] {
+  bottom: 360%;
+}
 .right-\[49\%\] {
   right: 49%;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 .col-span-3 {
   grid-column: span 3 / span 3;
@@ -489,9 +498,6 @@ nav a {
 }
 .col-span-9 {
   grid-column: span 9 / span 9;
-}
-.m-10p {
-  margin: 10%;
 }
 .m-\[30\%\] {
   margin: 30%;
@@ -541,6 +547,9 @@ nav a {
 .min-h-70 {
   min-height: 70vh;
 }
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -559,11 +568,11 @@ nav a {
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -624,9 +633,6 @@ nav a {
 }
 .border-t {
   border-top-width: 1px;
-}
-.border-t-2 {
-  border-top-width: 2px;
 }
 .border-black {
   --tw-border-opacity: 1;
@@ -756,10 +762,6 @@ nav a {
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .sm\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
   .sm\:text-left {
     text-align: left;
   }
@@ -796,19 +798,11 @@ nav a {
   .md\:border-b-0 {
     border-bottom-width: 0px;
   }
-  .md\:bg-slate-400 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-  }
 }
 
 @media (min-width: 1024px) {
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
-  }
-  .lg\:bg-sand {
-    --tw-bg-opacity: 1;
-    background-color: rgb(234 230 222 / var(--tw-bg-opacity));
   }
   .lg\:px-16 {
     padding-left: 4rem;
@@ -819,9 +813,5 @@ nav a {
 @media (min-width: 1280px) {
   .xl\:col-span-4 {
     grid-column: span 4 / span 4;
-  }
-  .xl\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 }
