@@ -16,11 +16,11 @@
     }
 
     .heading-lg {
-        @apply text-5xl
+        @apply text-[4.4rem]
     }
 
     .heading-lg-mobile {
-        @apply text-4xl font-sans uppercase mb-4 tracking-wider leading-[1.2em] mx-5p
+        @apply text-6xl font-sans uppercase mb-4 tracking-wider leading-[1.2em] mx-5p
     }
 
     .heading-md {
