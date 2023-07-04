@@ -16,7 +16,7 @@
     }
 
     .heading-lg {
-        @apply text-[4.4rem]
+        @apply text-7xl
     }
 
     .heading-lg-mobile {
