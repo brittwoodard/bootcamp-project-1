@@ -66,8 +66,20 @@
         @apply border-feature text-feature transition-[0.5s]
     }
 
-}
+    .bg-overlay {
+        @apply relative
+    }
 
-:focus-visible {
-    @apply outline-none border-b border-feature
-  }
+    .bg-overlay::before {
+        @apply content-[""] absolute top-0 left-0 bottom-0 right-0 bg-white opacity-30
+    }
+
+    .bg-overlay>* {
+        @apply relative
+    }
+
+    :focus-visible {
+        @apply outline-none ring-1 ring-feature
+    }
+
+}
