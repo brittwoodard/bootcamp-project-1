@@ -766,25 +766,15 @@ nav a {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-/* JS
-.pulse-animation {
-    animation: pulse 1s ease-in-out infinite alternate;
+:focus-visible {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(140 79 61 / var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
-.pulse-animation:hover { */
-    /* animation-play-state: paused; */
-    /* @apply bg-white duration-1000
-}
-
-@keyframes pulse {
-    from {
-      scale: .9;
-    }
-    to { 
-      scale: 1.1;
-    }
-  } */
-    @media (min-width: 640px) {
+@media (min-width: 640px) {
 
     .sm\:heading-lg {
     font-size: 4.5rem;
@@ -796,15 +786,18 @@ nav a {
     line-height: 1.75rem;
   }
 }
-    .placeholder\:text-black::-moz-placeholder {
+
+.placeholder\:text-black::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-    .placeholder\:text-black::placeholder {
+
+.placeholder\:text-black::placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-    @media (min-width: 640px) {
+
+@media (min-width: 640px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -824,7 +817,8 @@ nav a {
     text-align: right;
   }
 }
-    @media (min-width: 768px) {
+
+@media (min-width: 768px) {
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -856,7 +850,8 @@ nav a {
     border-bottom-width: 0px;
   }
 }
-    @media (min-width: 1024px) {
+
+@media (min-width: 1024px) {
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -865,7 +860,8 @@ nav a {
     padding-right: 4rem;
   }
 }
-    @media (min-width: 1280px) {
+
+@media (min-width: 1280px) {
   .xl\:col-span-4 {
     grid-column: span 4 / span 4;
   }

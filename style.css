@@ -68,21 +68,6 @@
 
 }
 
-/* JS
-.pulse-animation {
-    animation: pulse 1s ease-in-out infinite alternate;
-}
-
-.pulse-animation:hover { */
-    /* animation-play-state: paused; */
-    /* @apply bg-white duration-1000
-}
-
-@keyframes pulse {
-    from {
-      scale: .9;
-    }
-    to { 
-      scale: 1.1;
-    }
-  } */
+:focus-visible {
+    @apply outline-none border-b border-feature
+  }
