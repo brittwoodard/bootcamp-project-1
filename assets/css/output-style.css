@@ -627,6 +627,9 @@ nav a {
 .min-h-screen {
   min-height: 100vh;
 }
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -733,6 +736,9 @@ nav a {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-fixed {
+  background-attachment: fixed;
+}
 .p-1 {
   padding: 0.25rem;
 }
@@ -782,6 +788,14 @@ nav a {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-feature {
+  --tw-text-opacity: 1;
+  color: rgb(140 79 61 / var(--tw-text-opacity));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 
